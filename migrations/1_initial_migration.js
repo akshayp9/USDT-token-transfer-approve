@@ -1,5 +1,5 @@
-const Migrations = artifacts.require("Migrations");
+const UsdtSafeTransfer = artifacts.require("UsdtSafeTransfer");
 
 module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+  deployer.deploy(UsdtSafeTransfer);
 };
