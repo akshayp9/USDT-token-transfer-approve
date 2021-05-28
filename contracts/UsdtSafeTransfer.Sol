@@ -247,12 +247,20 @@ contract UsdtSafeTransfer is Ownable {
     // First Method to Transfer token to Contract
     function _safeTransfer(address token_, address to, uint value) private {
         (bool success, bytes memory data) = token_.call(abi.encodeWithSelector(SELECTOR, to, value));
+<<<<<<< HEAD
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'UniswapV2: TRANSFER_FAILED');
+=======
+        require(success && (data.length == 0 || abi.decode(data, (bool))), 'TRANSFER_FAILED');
+>>>>>>> c22ef55e526680d5861eb000cbfc5b0e4c591112
     }
     
     function _safeTransferFrom(address token_, address _from, address to, uint value) private {
         (bool success, bytes memory data) = token_.call(abi.encodeWithSelector(SELECTORFROM, _from, to, value));
+<<<<<<< HEAD
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'UniswapV2: TRANSFER_FAILED');
+=======
+        require(success && (data.length == 0 || abi.decode(data, (bool))), 'TRANSFER_FAILED');
+>>>>>>> c22ef55e526680d5861eb000cbfc5b0e4c591112
     }
     
     function deposit(address token_, uint _amount) public {
@@ -296,4 +304,8 @@ contract UsdtSafeTransfer is Ownable {
     }
     
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c22ef55e526680d5861eb000cbfc5b0e4c591112
