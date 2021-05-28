@@ -82,11 +82,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-<<<<<<< HEAD
       version: "0.8.4",    // Fetch exact version from solc-bin (default: truffle's version)
-=======
-      version: "0.8.2",    // Fetch exact version from solc-bin (default: truffle's version)
->>>>>>> c22ef55e526680d5861eb000cbfc5b0e4c591112
       docker: false,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
        optimizer: {
